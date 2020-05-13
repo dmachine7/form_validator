@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign Up Form</title>
+  </head>
+  <body>
+    <div class="father">
+      <div class="child1">
+        <h1>HOP IN FELLA</h1> <p id="greet">Tell us about yourself</p>
+      </div>
+      <div class="child2">
+        <form id="form1" method="post">
+          <fieldset class="bound">
+            <legend>Personalia</legend>
+            <div class="helptext">Enter your first name</div>
+            <input type="text" name="fname" placeholder="First Name" onfocus="displayht(0)" onfocusout="displayhtoff(0)">
+            <div class="helptext">Enter your last name</div>
+            <input type="text" name="lname" placeholder="Last Name" onfocus="displayht(1)" onfocusout="displayhtoff(1)"><br>
+            <div class="helptext">Enter your e-mail</div>
+            <input type="email" name="email" placeholder="E-mail" onfocus="displayht(2)" onfocusout="displayhtoff(2)"><br>
+            <div class="helptext">Enter your 10 digit phone number</div>
+            <input type="number" name="phone" placeholder="Phone No." onfocus="displayht(3)" onfocusout="displayhtoff(3)"><br>
+          </fieldset>
+          <fieldset class="bound">
+            <legend>Account details</legend>
+            <div class="helptext">Must contain a special character, number and alphabet</div>
+            <input type="text" name="uname" placeholder="Username" onfocus="displayht(4)" onfocusout="displayhtoff(4)">
+            <div class="helptext">Set a 8-digit password</div>
+            <input type="password" name="pword" placeholder="Password" onfocus="displayht(5)" onfocusout="displayhtoff(5)">
+          </fieldset>
+        </form>
+        <button id="submit" type="button" name="button" onclick="check()">Be the part of the family</button>
+      </div>
+    </div>
+    <script src="form.js"></script>
+  </body>
+</html>
